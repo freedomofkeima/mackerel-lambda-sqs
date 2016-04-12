@@ -1,0 +1,14 @@
+{
+    "mackerel_service_name": "service_name",
+    "mackerel_api_key": "secret_api_key",
+    "services": [
+        {
+            "aws_client_type": "sqs",
+            "aws_region": "ap-northeast-1",
+            "queue_url": "https://sqs.ap-northeast-1.amazonaws.com/123456789012/queue-name",
+            "sqs_attribute_name"   : "ApproximateNumberOfMessages",
+            "mackerel_metrics_name": "SQS.ApproximateNumberOfMessages.queue-name",
+			"int_or_float": "int"
+        }
+    ]
+}
