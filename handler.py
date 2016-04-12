@@ -17,7 +17,7 @@ def handler(event, context):
         type = service['aws_client_type']
         if type == 'sqs':
             client = boto3.client('sqs', region_name = service['aws_region'])
-            response = boto_client.get_queue_attributes(
+            response = client.get_queue_attributes(
                 QueueUrl = service['queue_url'],
                 AttributeNames=[service['sqs_attribute_name']]
             )
@@ -37,5 +37,5 @@ def handler(event, context):
         else:
             print "Type %s Not Implemented" % type
     # Post custom metrics
-    mackerel_client.post_service_metrics(data['mackerel_service_name'])
+    mackerel_client.post_service_metrics(data['mackerel_service_name'], metrics)
     return "finished"

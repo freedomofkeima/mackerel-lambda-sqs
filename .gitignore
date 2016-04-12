@@ -1,6 +1,7 @@
 *.pyc
 /build
 /venv
+lambda.zip
 
 # Packages
 *.egg
