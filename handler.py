@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from mackerel.client import Client
+from mackerel.clienthde import Client
 import boto3
 import json
 import time
