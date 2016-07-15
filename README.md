@@ -50,5 +50,9 @@ Of course, you can utilize this Lambda mechanism for other AWS services: DynamoD
 
 Mackerel has a good dashboard for entire system monitoring. You can also configure it in your instance internally to propagate Docker statistics, CPU loads, etc.
 
+LICENSE
+===============================
 
-Last Updated: July 13, 2016
+MIT License.
+
+Last Updated: July 15, 2016
